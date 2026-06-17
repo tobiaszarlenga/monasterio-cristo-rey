@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add('js');</script>
+  <title>Galería del Monasterio · Monasterio Cristo Rey</title>
+  <meta name="description" content="Galería de imágenes del Monasterio Cristo Rey en El Siambón, Tucumán.">
+  <meta name="theme-color" content="#2c3a30">
+  <link rel="icon" href="assets/app-icon-32.png">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<div id="hdr"></div>
+
+<main id="main">
+  <span id="top"></span>
+
+  <section class="page-hero page-hero--image" style="--bg:url('assets/Amanecer (1).JPG')">
+    <div class="container">
+      <span class="eyebrow"><i class="fa-solid fa-images" aria-hidden="true"></i> El Monasterio</span>
+      <h1>Galería del Monasterio</h1>
+      <nav class="crumbs" aria-label="Migas de pan">
+        <a href="index.html">Inicio</a><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        <span>El Monasterio</span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        <span class="current">Galería</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="container">
+      <div class="gallery reveal">
+        <figure class="gallery-main">
+          <img id="galleryMain" src="assets/Frente (1).JPG" alt="Vista destacada del monasterio">
+        </figure>
+        <div class="gallery-grid" id="galleryGrid">
+          <img src="assets/Frente (1).JPG" alt="Frente 1">
+          <img src="assets/Frente (4).JPG" alt="Frente 4">
+          <img src="assets/Frente (5).JPG" alt="Frente 5">
+          <img src="assets/Frente (6).JPG" alt="Frente 6">
+          <img src="assets/Frente (7).JPG" alt="Frente 7">
+          <img src="assets/Frente (8).JPG" alt="Frente 8">
+          <img src="assets/Amanecer (1).JPG" alt="Amanecer 1">
+          <img src="assets/Amanecer (2).JPG" alt="Amanecer 2">
+          <img src="assets/Amanecer (3).JPG" alt="Amanecer 3">
+          <img src="assets/Amanecer (4).JPG" alt="Amanecer 4">
+          <img src="assets/Cementerio.JPG" alt="Cementerio">
+          <img src="assets/Claustro (1).JPG" alt="Claustro 1">
+          <img src="assets/Claustro (4).JPG" alt="Claustro 4">
+          <img src="assets/Claustro (5).JPG" alt="Claustro 5">
+          <img src="assets/Colmenar (1).JPG" alt="Colmenar 1">
+          <img src="assets/Colmenar (2).JPG" alt="Colmenar 2">
+          <img src="assets/DesdeElCerroElBalcon (1).JPG" alt="Vista desde el cerro 1">
+          <img src="assets/DesdeElCerroElBalcon (2).JPG" alt="Vista desde el cerro 2">
+          <img src="assets/DesdePeriquillo (1).JPG" alt="Desde Periquillo 1">
+          <img src="assets/DesdePeriquillo (4).JPG" alt="Desde Periquillo 4">
+          <img src="assets/posterior (1).JPG" alt="Parte posterior 1">
+          <img src="assets/posterior (2).JPG" alt="Parte posterior 2">
+          <img src="assets/posterior (3).JPG" alt="Parte posterior 3">
+          <img src="assets/posterior (4).JPG" alt="Parte posterior 4">
+          <img src="assets/GrutaVirgen (1).JPG" alt="Gruta Virgen 1">
+          <img src="assets/GrutaVirgen (2).JPG" alt="Gruta Virgen 2">
+          <img src="assets/Sanjoseyelniño (2).JPG" alt="San José y el Niño">
+          <img src="assets/Vista interna (1).JPG" alt="Vista interna 1">
+          <img src="assets/Vista interna (2).JPG" alt="Vista interna 2">
+          <img src="assets/Vista interna (3).JPG" alt="Vista interna 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Anterior">&#10094;</button>
+  <img class="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" aria-label="Siguiente">&#10095;</button>
+</div>
+
+<div id="ftr"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
