@@ -1,6 +1,8 @@
 # Herramientas / local
 .claude/
 node_modules/
+.wrangler/
+dist/
 
 # Sistema operativo
 .DS_Store
