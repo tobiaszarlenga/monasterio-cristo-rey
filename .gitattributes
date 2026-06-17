@@ -1,0 +1,5 @@
+# Excluir archivos meta del paquete de despliegue (git archive)
+.github         export-ignore
+.gitattributes  export-ignore
+.gitignore      export-ignore
+README.md       export-ignore

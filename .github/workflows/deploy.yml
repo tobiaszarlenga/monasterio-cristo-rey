@@ -16,9 +16,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build site bundle (solo archivos del sitio, sin .git ni meta)
+        run: |
+          mkdir -p dist
+          git archive HEAD | tar -x -C dist
+          echo "Archivos a desplegar:" && find dist -type f | wc -l
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=monasterio-cristo-rey --branch=main
+          command: pages deploy dist --project-name=monasterio-cristo-rey --branch=main
